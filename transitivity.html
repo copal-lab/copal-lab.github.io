@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore CoPAL research on transitivity, transitive inference, and relational learning.">
+  <title>Transitivity: Is It the Same as Transitive Inference? | CoPAL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-intro { padding-top: 66px; padding-bottom: 54px; }
+    .breadcrumb { font-size: .88rem; margin-bottom: 25px; color: var(--muted); }
+    .breadcrumb a { color: var(--blue); }
+    .page-intro h1 { max-width: 900px; }
+    .topic-section { padding: 58px 0; border-top: 1px solid var(--line); }
+    .topic-section.muted { background: var(--mist); }
+    .prose { max-width: 800px; }
+    .prose p { font-size: 1.08rem; }
+    .tr-intro-layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(260px, .9fr); gap: 36px; align-items: start; }
+    .tr-illustration { margin: 6px 0 0; }
+    .tr-illustration img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .publication-list { padding-left: 1.5rem; max-width: 850px; }
+    .publication-list li { margin-bottom: 20px; line-height: 1.7; overflow-wrap: anywhere; }
+    @media (max-width: 760px) {
+      .page-intro { padding-top: 40px; padding-bottom: 40px; }
+      .topic-section { padding: 42px 0; }
+      .tr-intro-layout { grid-template-columns: 1fr; gap: 20px; }
+      .tr-illustration { max-width: 400px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CoPAL home">
+        <img src="images/copal-logo.png" alt="CoPAL logo with pigeon and cockroaches" width="82" height="82">
+        <span><strong>CoPAL</strong><small>Comparative Perception and Attention Laboratory</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research" aria-current="page">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="container page-intro">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="relational-learning.html">Relational learning</a> / Transitivity</p>
+      <p class="eyebrow">Our research</p>
+      <h1>Transitivity: Is It the Same as Transitive Inference?</h1>
+      <div class="tr-intro-layout">
+        <div class="prose">
+          <p>If A equals B, and B equals C, then A must equal C. This is an example of <strong>transitivity</strong>, a fundamental property of many relationships.</p>
+          <p>Sounds familiar? It should! <a href="transitive-inference.html">Transitive inference</a> tasks also involve learning relationships among items. But here's the interesting part: <strong>transitive inference and transitivity are not necessarily the same thing.</strong></p>
+          <p>In a typical transitive inference task, animals learn a series of overlapping pairs, such as A+B−, B+C−, C+D−, and D+E−, and are then tested on new combinations.</p>
+          <p>In a transitivity task, animals learn to match pictures. For example, when A1 is presented, the correct choice is B1; when B1 is presented, the correct choice is C1. At test, we present A1, but the choices are now C1 and C2. If the animal responds transitively, it should select C1.</p>
+        </div>
+        <figure class="tr-illustration">
+          <img src="images/transitivity-illustration.png" alt="Examples of picture matching arrangements used to study transitivity" width="855" height="485">
+        </figure>
+      </div>
+    </section>
+    <section class="topic-section muted" aria-labelledby="research-title">
+      <div class="container prose">
+        <p class="eyebrow">What we investigate</p>
+        <h2 id="research-title">Our Research</h2>
+        <p>Do these two tasks measure the same underlying cognitive ability, or do they depend on different learning and decision-making processes?</p>
+        <p>Surprisingly, despite decades of research, we don't yet have a clear answer. Transitive inference and transitivity have largely been studied separately, making direct comparisons difficult.</p>
+        <p>At CoPAL, we're investigating both tasks to understand whether success in one predicts success in the other, and what that might tell us about relational reasoning in humans and other animals.</p>
+        <p>For an accessible discussion of why this distinction matters, see our article in <em>The Conversation</em>:</p>
+        <p><a href="https://theconversation.com/humans-and-animals-can-both-think-logically-but-testing-what-kind-of-logic-theyre-using-is-tricky-253001">Humans and animals can both think logically, but testing what kind of logic they're using is tricky</a></p>
+      </div>
+    </section>
+    <section class="topic-section" aria-labelledby="publications-title">
+      <div class="container">
+        <p class="eyebrow">Further reading</p>
+        <h2 id="publications-title">Selected Publications</h2>
+        <ol class="publication-list">
+          <li>Lazareva, O. (2025). Transitive inference and transitivity: Two sides of the same coin? <em>Journal of the Experimental Analysis of Behavior, 124</em>(1), e70031. <a href="https://doi.org/10.1002/jeab.70031">https://doi.org/10.1002/jeab.70031</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 CoPAL</span><span>Birds, bugs, and brains.</span></div></footer>
+</body>
+</html>
