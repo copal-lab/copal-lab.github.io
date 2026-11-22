@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore CoPAL research on transitive inference, reinforcement-based explanations, the hippocampus, and human awareness.">
+  <title>Transitive Inference: Reasoning Without Words | CoPAL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-intro { padding-top: 66px; padding-bottom: 54px; }
+    .breadcrumb { font-size: .88rem; margin-bottom: 25px; color: var(--muted); }
+    .breadcrumb a { color: var(--blue); }
+    .page-intro h1 { max-width: 850px; }
+    .topic-section { padding: 58px 0; border-top: 1px solid var(--line); }
+    .topic-section.muted { background: var(--mist); }
+    .prose { max-width: 800px; }
+    .prose p { font-size: 1.08rem; }
+    .question { margin-top: 40px; }
+    .question:first-of-type { margin-top: 25px; }
+    .question h3 { margin-bottom: 15px; }
+    .training-pairs { font-size: 1.2rem; font-weight: 700; letter-spacing: .02em; padding: 18px 22px; background: var(--mist); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; }
+    .ti-intro-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .85fr); gap: 36px; align-items: start; }
+    .ti-illustration { margin: 6px 0 0; }
+    .ti-illustration img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .publication-list { padding-left: 1.5rem; max-width: 850px; }
+    .publication-list li { margin-bottom: 20px; line-height: 1.7; overflow-wrap: anywhere; }
+    @media (max-width: 760px) {
+      .page-intro { padding-top: 40px; padding-bottom: 40px; }
+      .topic-section { padding: 42px 0; }
+      .training-pairs { font-size: 1.05rem; }
+      .ti-intro-layout { grid-template-columns: 1fr; gap: 20px; }
+      .ti-illustration { max-width: 360px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CoPAL home">
+        <img src="images/copal-logo.png" alt="CoPAL logo with pigeon and cockroaches" width="82" height="82">
+        <span><strong>CoPAL</strong><small>Comparative Perception and Attention Laboratory</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research" aria-current="page">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="container page-intro">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="relational-learning.html">Relational learning</a> / Transitive inference</p>
+      <p class="eyebrow">Our research</p>
+      <h1>Transitive Inference: Reasoning Without Words</h1>
+      <div class="ti-intro-layout">
+      <div class="prose">
+        <p>Can animals reason without language?</p>
+        <p>Imagine that Mary is taller than Ann, and Ann is taller than Kate. Even if you've never seen Mary and Kate standing together, you can figure out that Mary must be taller than Kate. This ability to infer an unfamiliar relationship from previously learned relationships is called <strong>transitive inference (TI)</strong>.</p>
+        <p>But can animals do the same thing? To investigate this question, we train animals to discriminate between overlapping pairs of stimuli:</p>
+        <p class="training-pairs">A+ B−, B+ C−, C+ D−, D+ E−</p>
+        <p>Here, the plus sign indicates a rewarded choice, and the minus sign indicates a choice that is not rewarded.</p>
+        <p>Once the animals have learned these pairs, we present a new combination: <strong>B versus D</strong>. Both stimuli have been rewarded in some training pairs and not rewarded in others. Yet animals often choose B over D, consistent with the inferred relationship B &gt; C &gt; D.</p>
+        <p>The interesting question is <em>how</em> they arrive at that choice.</p>
+      </div>
+      <figure class="ti-illustration">
+        <img src="images/ti-illustration.png" alt="Illustration of the pigeon transitive inference task and ordered stimuli">
+      </figure>
+      </div>
+    </section>
+
+    <section class="topic-section muted" aria-labelledby="research-title">
+      <div class="container prose">
+        <p class="eyebrow">What we investigate</p>
+        <h2 id="research-title">Our Research</h2>
+        <div class="question">
+          <h3>Can reinforcement history explain transitive inference?</h3>
+          <p>One possibility is that animals simply learn how rewarding each stimulus has been and choose whichever has acquired greater associative strength. If so, their choices should be predictable from their reinforcement history.</p>
+          <p>Our computational modeling of pigeon data showed that predictions from reinforcement-based models were inconsistent with the pigeons' actual choices. We subsequently confirmed these findings using rhesus monkey data collected by our collaborators <a href="https://hamptonlab.wordpress.com/robert-hampton-2/">Rob Hampton</a> and <a href="https://sites.google.com/a/bucknell.edu/c2b2/">Reggie Gazes</a>.</p>
+          <p>Simply put, reinforcement-based models cannot adequately account for the patterns of choices animals make in transitive inference tasks.</p>
+          <p>This suggests that something more than learned reinforcement values contributes to their performance.</p>
+        </div>
+        <div class="question">
+          <h3>Does the hippocampus play a role?</h3>
+          <p>The hippocampus is a brain structure involved in learning and memory. But is it necessary for transitive inference? Rodent research suggests that it is, but what about pigeons?</p>
+          <p>Our research with pigeons revealed an intriguing result: hippocampal lesions impaired transitive inference performance in birds that appeared to rely on inference-based strategies, but not in birds whose choices were better explained by reinforcement-based strategies.</p>
+          <p>In other words, pigeons can approach the same task in different ways, and the importance of the hippocampus depends on the strategy they use.</p>
+        </div>
+        <div class="question">
+          <h3>Do humans need to understand what they've learned?</h3>
+          <p>Humans can also perform nonverbal transitive inference tasks, sometimes without being able to explain the relationships they've learned.</p>
+          <p>Our research suggests that awareness of the relationships among stimuli may be important for consistently successful performance. People who recognize the underlying order tend to perform more reliably than those who do not. However, some individuals who are unaware of the underlying relationships still perform very accurately during testing, and we do not yet understand why others struggle without this awareness.</p>
+          <p>This raises an interesting question: how much of transitive inference depends on explicitly understanding relationships, and how much can emerge from learning without conscious awareness?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="publications-title">
+      <div class="container">
+        <p class="eyebrow">Further reading</p>
+        <h2 id="publications-title">Selected Publications</h2>
+        <ol class="publication-list">
+          <li>Lazareva, O. F., Paxton Gazes, R., Elkins, Z., &amp; Hampton, R. (2020). Associative models fail to characterize transitive inference performance in rhesus monkeys (<em>Macaca mulatta</em>). <em>Learning &amp; Behavior, 48</em>(1), 135–148. <a href="https://doi.org/10.3758/s13420-020-00417-6">https://doi.org/10.3758/s13420-020-00417-6</a></li>
+          <li>Lazareva, O. F., Kandray, K., &amp; Acerbo, M. J. (2015). Hippocampal lesion and transitive inference: Dissociation of inference-based and reinforcement-based strategies in pigeons. <em>Hippocampus, 25</em>, 219–226. <a href="https://doi.org/10.1002/hipo.22366">https://doi.org/10.1002/hipo.22366</a></li>
+          <li>Lazareva, O. F., &amp; Wasserman, E. A. (2010). Nonverbal transitive inference: Effects of task and awareness on human performance. <em>Behavioural Processes, 83</em>, 99–112. <a href="https://doi.org/10.1016/j.beproc.2009.11.002">https://doi.org/10.1016/j.beproc.2009.11.002</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 CoPAL</span><span>Birds, bugs, and brains.</span></div></footer>
+</body>
+</html>
