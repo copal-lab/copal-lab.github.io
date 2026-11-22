@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore CoPAL research on transposition: how pigeons learn and generalize relationships between visual stimuli.">
+  <title>Transposition: Learning Relationships | CoPAL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-intro { padding-top: 66px; padding-bottom: 54px; }
+    .breadcrumb { font-size: .88rem; margin-bottom: 25px; color: var(--muted); }
+    .breadcrumb a { color: var(--blue); }
+    .page-intro h1 { max-width: 850px; }
+    .transposition-lead { display: grid; grid-template-columns: 1.2fr .8fr; gap: 7%; align-items: start; }
+    .transposition-lead figure { margin: 0; }
+    .transposition-lead img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .transposition-lead figcaption { font-size: .8rem; color: var(--muted); margin-top: 9px; }
+    .topic-section { padding: 58px 0; border-top: 1px solid var(--line); }
+    .topic-section.muted { background: var(--mist); }
+    .prose { max-width: 800px; }
+    .prose p { font-size: 1.08rem; }
+    .publication-list { padding-left: 1.5rem; max-width: 850px; }
+    .publication-list li { margin-bottom: 20px; line-height: 1.7; overflow-wrap: anywhere; }
+    @media (max-width: 760px) {
+      .page-intro { padding-top: 40px; padding-bottom: 40px; }
+      .transposition-lead { grid-template-columns: 1fr; gap: 25px; }
+      .transposition-lead figure { max-width: 480px; }
+      .topic-section { padding: 42px 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CoPAL home">
+        <img src="images/copal-logo.png" alt="CoPAL logo with pigeon and cockroaches" width="82" height="82">
+        <span><strong>CoPAL</strong><small>Comparative Perception and Attention Laboratory</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research" aria-current="page">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="container page-intro">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="relational-learning.html">Relational learning</a> / Transposition</p>
+      <p class="eyebrow">Our research</p>
+      <h1>Transposition: Learning Relationships</h1>
+      <div class="transposition-lead">
+        <div class="prose">
+          <p>Imagine teaching a pigeon to choose the larger of two circles. After some training, you present two new circles, both larger than the ones it has seen before. What will the pigeon choose?</p>
+          <p>If it has learned the size of the previously rewarded circle, it might choose the smaller of the two new circles because that one is closer in size to the previously rewarded stimulus. But if it has learned the relationship <em>larger than</em>, it should choose the larger circle, even though the smaller circle is more similar in size to the previously rewarded one.</p>
+        </div>
+        <figure>
+          <img src="images/walking-pigeon.png" alt="A pigeon faces the viewer with an inquisitive, slightly puzzled expression" width="1226" height="1125">
+        </figure>
+      </div>
+      <div class="prose">
+        <p>This phenomenon is called <strong>transposition</strong>: responding to a relationship between stimuli rather than simply to their individual physical properties. Studying it helps us investigate what animals learn about their environment. Do they remember specific stimulus properties, such as size or brightness? Do they learn relationships between stimuli? Or can both types of information influence their choices?</p>
+        <p>These questions are important because relationships allow organisms to respond flexibly to new situations. Recognizing that one object is larger, brighter, or otherwise different from another can be useful even when the objects themselves are unfamiliar.</p>
+      </div>
+    </section>
+
+    <section class="topic-section muted" aria-labelledby="our-research-title">
+      <div class="container prose">
+        <p class="eyebrow">What we investigate</p>
+        <h2 id="our-research-title">Our Research</h2>
+        <p>At CoPAL, we are particularly interested in the conditions under which animals respond to relative versus absolute stimulus properties, and what their choices reveal about the processes underlying relational learning.</p>
+        <p>Imagine we gave our pigeons two pairs of circles instead of just one. Would they learn the <em>larger than</em> relationship more readily because they encounter it in two different pairs?</p>
+        <p>Now imagine that the circles used during training are medium-sized, but the new pair consists of very large circles. Would pigeons be less likely to select the larger circle because the new stimuli look nothing like those they've seen during training?</p>
+        <p>These experiments help us understand how animals balance information about individual stimuli with information about the relationships between them, and how that balance changes with experience.</p>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="publications-title">
+      <div class="container">
+        <p class="eyebrow">Further reading</p>
+        <h2 id="publications-title">Selected Publications</h2>
+        <ol class="publication-list">
+          <li>Lazareva, O. F., Young, M. E., &amp; Wasserman, E. A. (2014). A three-component model of relational responding in the transposition paradigm. <em>Journal of Experimental Psychology: Animal Behavior Processes, 40</em>, 63–80. <a href="https://doi.org/10.1037/xan0000004">https://doi.org/10.1037/xan0000004</a></li>
+          <li>Lazareva, O. F., Miner, M., Wasserman, E. A., &amp; Young, M. E. (2008). Multiple-pair training enhances transposition in pigeons. <em>Learning and Behavior, 36</em>(3), 174–187. <a href="https://doi.org/10.3758/LB.36.3.174">https://doi.org/10.3758/LB.36.3.174</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 CoPAL</span><span>Birds, bugs, and brains.</span></div></footer>
+</body>
+</html>
