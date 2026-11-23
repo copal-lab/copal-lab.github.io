@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore CoPAL research on the transitive inference list task and how humans and other primates combine overlapping sequences.">
+  <title>Transitive Inference List Task | CoPAL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-intro { padding-top: 66px; padding-bottom: 54px; }
+    .breadcrumb { font-size: .88rem; margin-bottom: 25px; color: var(--muted); }
+    .breadcrumb a { color: var(--blue); }
+    .page-intro h1 { max-width: 900px; }
+    .topic-section { padding: 58px 0; border-top: 1px solid var(--line); }
+    .topic-section.muted { background: var(--mist); }
+    .prose { max-width: 800px; }
+    .prose p { font-size: 1.08rem; }
+    .tr-intro-layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(260px, .9fr); gap: 36px; align-items: start; }
+    .tr-illustration { margin: 6px 0 0; }
+    .tr-illustration img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .publication-list { padding-left: 1.5rem; max-width: 850px; }
+    .publication-list li { margin-bottom: 20px; line-height: 1.7; overflow-wrap: anywhere; }
+    @media (max-width: 760px) {
+      .page-intro { padding-top: 40px; padding-bottom: 40px; }
+      .topic-section { padding: 42px 0; }
+      .tr-intro-layout { grid-template-columns: 1fr; gap: 20px; }
+      .tr-illustration { max-width: 400px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CoPAL home">
+        <img src="images/copal-logo.png" alt="CoPAL logo with pigeon and cockroaches" width="82" height="82">
+        <span><strong>CoPAL</strong><small>Comparative Perception and Attention Laboratory</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research" aria-current="page">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="container page-intro">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="relational-learning.html">Relational learning</a> / Transitive Inference List Task</p>
+      <p class="eyebrow">Our research</p>
+      <h1>Transitive Inference List Task</h1>
+      <div class="tr-intro-layout">
+        <div class="prose">
+          <p>How do we combine separately learned relationships into a larger, organized whole?</p>
+          <p>In the traditional <a href="transitive-inference.html">transitive inference</a> task, participants learn relationships between pairs of stimuli and are then tested on relationships they have never encountered directly. The <strong>transitive inference list (TIL) task</strong> takes a different approach: participants learn several short sequences of images, some of which overlap.</p>
+          <p>For example, participants might learn three sequences:</p>
+          <p><strong>A → B → C</strong><br><strong>C → D → E</strong><br><strong>E → F → G</strong></p>
+          <p>Each sequence is learned separately, with participants selecting the images in the correct order. Because the sequences share items, they can potentially be combined into one longer sequence: <strong>A → B → C → D → E → F → G</strong>.</p>
+          <p>The critical question is whether participants recognize these connections and use them to make judgments about relationships between items from different sequences.</p>
+        </div>
+        <figure class="tr-illustration">
+          <img src="images/til-task.png" alt="Three rows of photographs illustrating overlapping image sequences in the transitive inference list task" width="522" height="658">
+        </figure>
+      </div>
+    </section>
+    <section class="topic-section muted" aria-labelledby="findings-title">
+      <div class="container prose">
+        <p class="eyebrow">What we investigate</p>
+        <h2 id="findings-title">What Have We Found?</h2>
+        <p>In our initial study with human participants, we found that awareness of the overlapping items mattered. Participants who recognized the connections between sequences behaved as though they had integrated them into a single longer list. Those who did not recognize the connections tended to rely on the positions of items within their original short sequences.</p>
+        <p>Importantly, the task allows us to distinguish these strategies by examining choices on test pairs for which they predict different responses.</p>
+        <p>We are also extending this work to rhesus monkeys in collaboration with <a href="https://www.mhbabb.com/">Matt Babb</a> and <a href="https://www.sarah-brosnan.com/">Sarah Brosnan</a>. This research will help us investigate how nonhuman primates learn and combine overlapping sequences, and whether they use strategies similar to those observed in humans.</p>
+      </div>
+    </section>
+    <section class="topic-section" aria-labelledby="next-title">
+      <div class="container prose">
+        <p class="eyebrow">What's next</p>
+        <h2 id="next-title">Where Are We Going Next?</h2>
+        <p>One of our next questions is how performance on the TIL task relates to performance on the traditional transitive inference task. Do the two tasks measure similar relational abilities, or do they depend on different learning and reasoning processes?</p>
+      </div>
+    </section>
+    <section class="topic-section muted" aria-labelledby="publications-title">
+      <div class="container">
+        <p class="eyebrow">Further reading</p>
+        <h2 id="publications-title">Selected Publications</h2>
+        <ol class="publication-list">
+          <li>Lazareva, O. F., Mars, V., &amp; Gazes, R. P. (2026). A new behavioral method for assessing relational reasoning: Transitive inference list task. <em>Journal of Comparative Psychology</em>. Advance online publication. <a href="https://doi.org/10.1037/com0000459">https://doi.org/10.1037/com0000459</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 CoPAL</span><span>Birds, bugs, and brains.</span></div></footer>
+</body>
+</html>
